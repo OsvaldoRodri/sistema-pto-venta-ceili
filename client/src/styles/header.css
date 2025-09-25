@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.logoAndTitle {
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.navBar ul li {
+    list-style: none;
+}
+
+
+
+.navBar ul li a {
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease;
+
+}
+
+/*Elementos link de la Navbar*/
+.navBar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navBar ul li a:hover {
+    cursor: pointer;
+    font-size: 23px;
+    transition: 0.3s;
+
+}
+
+/*Navbar Button*/
+.navBar ul li button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navBar ul li button {
+    transition: 0.2s ease;
+}
+
+.logoAndTitle img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.logoAndTitle h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -15px;
+}
