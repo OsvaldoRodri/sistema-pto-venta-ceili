@@ -13,6 +13,7 @@ function Welcome() {
           <h1>Seccion de empleados</h1>
           <h3>Este programa fue creado independientemente como practica de programacion y para adicion a portafolio curricular.</h3>
           <Link to="/login"><ButtonPrimary>Iniciar Sesion</ButtonPrimary></Link>
+
         </div>
 
         <div className="rightSide">

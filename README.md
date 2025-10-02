@@ -23,6 +23,9 @@ A modern ice cream shop web application built with React, Prisma and Express.js.
 - **CORS** enabled for cross-origin requests
 - **dotenv** for environment configuration
 
+## DataBase
+- **MySql**
+
 ## 📁 Project Structure
 
 ```

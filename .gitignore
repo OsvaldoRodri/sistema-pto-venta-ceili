@@ -34,3 +34,8 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Prisma
+
+/server/generated/prisma
+/client/generated/prisma
