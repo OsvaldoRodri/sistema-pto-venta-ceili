@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Welcome from './pages/welcome.tsx'
 import Login from './pages/login.tsx'
 import './styles/index.css'
+import NotFound from './pages/notFound.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
