@@ -1,140 +1,97 @@
 # HelaDuck 🍦🦆
 
-A modern ice cream shop web application built with React, Prisma and Express.js. HelaDuck offers a delightful interface for browsing and ordering various ice cream flavors.
+Aplicación web de punto de venta e inventario para una paletería familiar en Aguascalientes, México.
 
-## 🚀 Features
+Proyecto iniciado como entregable académico para la materia **Soluciones de Programación Móvil** (Ingeniería en Sistemas Computacionales, UVM) y continuado como solución real para el negocio familiar.
 
-- **Interactive Frontend**: Built with React 19 and TypeScript for a smooth user experience
-- **Modern Development**: Powered by Vite for fast development and building
-- **Sell Point**: Implementation of a module for sales and register management
-- **Database Integration**: Prisma ORM for robust database operations
+## Contexto
 
-## 🛠️ Tech Stack
+Mi mamá lleva el control de ventas e inventario de su paletería con libreta y calculadora. HelaDuck nació para reemplazar ese flujo: registrar ventas, descontar inventario automáticamente y ver un resumen del día sin papel.
 
-### Frontend
-- **React 19** with TypeScript
-- **Vite** for development and building
-- **ESLint** for code quality
-- Modern CSS with responsive design
+## Stack actual
 
-### Backend
-- **Express.js** server
-- **Prisma ORM** for database management
-- **CORS** enabled for cross-origin requests
-- **dotenv** for environment configuration
+```
+Frontend   React 19 + TypeScript + Vite
+Backend    Express.js + Node.js
+ORM        Prisma
+Base datos MySQL
+```
 
-## DataBase
-- **MySql**
-
-## 📁 Project Structure
+## Estructura del proyecto
 
 ```
 heladuck/
-├── client/          # React frontend application
-└── server/          # Express.js backend with Prisma
+├── client/          # Frontend React + TypeScript
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── ...
+└── server/          # Backend Express + Prisma
+    ├── prisma/
+    │   └── schema.prisma
+    └── src/
+        └── ...
 ```
 
-## 🚀 Getting Started
+## Módulos planificados
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-- Database (PostgreSQL, MySQL, SQLite, etc.)
+| Módulo | Estado |
+|--------|--------|
+| Módulo de ventas (POS) | 🔄 En desarrollo |
+| Catálogo de productos | 🔄 En desarrollo |
+| Control de inventario | 📋 Planificado |
+| Módulo de reportes | 📋 Planificado |
+| Panel de administración | 📋 Planificado |
 
-### Installation
+## Roadmap
 
-1. Clone the repository:
+### Versión actual (v0.1 — bases)
+- Estructura cliente/servidor separada
+- Configuración de Prisma con MySQL
+- Componentes base de React
+
+### Próxima versión (v0.2)
+- CRUD de productos funcional
+- Registro de ventas con descuento automático de inventario
+- Pantalla de resumen diario
+
+### Versión futura (v1.0 — Servicio Social)
+Como parte del **Servicio Social en CEILI**, HelaDuck será adaptado como sistema multi-tenant para 15 microempresarios rurales de Toyahua de Abajo, Zacatecas. Cada microempresario tendrá su propio catálogo y registro de ventas en una sola plataforma.
+
+**Fecha de ejecución comunitaria:** Julio–Agosto 2026
+
+## Cómo correr el proyecto
+
 ```bash
-git clone <repository-url>
+git clone https://github.com/OsvaldoRodri/heladuck.git
 cd heladuck
-```
 
-2. Install client dependencies:
-```bash
-cd client
-npm install
-```
-
-3. Install server dependencies:
-```bash
-cd ../server
-npm install
-```
-
-4. Set up the database:
-```bash
+# Backend
 cd server
-# Configure your database URL in .env file
-# DATABASE_URL="your-database-connection-string"
-
-# Generate Prisma client
+npm install
 npx prisma generate
+npm run dev
 
-# Run database migrations
-npx prisma migrate dev
-```
-
-### Development
-
-1. Start the client development server:
-```bash
+# Frontend (en otra terminal)
 cd client
+npm install
 npm run dev
 ```
 
-2. Start the backend server:
-```bash
-cd server
-npm start
-```
+**Requisitos:** Node.js 18+, MySQL
 
-The client will be available at `http://localhost:5173` and the server at `http://localhost:3000` (or your configured port).
+## Por qué este proyecto importa
 
-## 🗄️ Database Management
+Es mi primer proyecto con cliente real. No es un tutorial ni un CRUD de práctica — hay una persona que va a usarlo para llevar su negocio. Eso cambia cómo piensas el diseño, los errores, y la experiencia de usuario.
 
-### Prisma Commands
+## Tecnologías
 
-```bash
-# Generate Prisma client after schema changes
-npx prisma generate
-
-# Create and apply new migration
-npx prisma migrate dev --name migration_name
-
-# View your data in Prisma Studio
-npx prisma studio
-
-# Reset database (development only)
-npx prisma migrate reset
-```
-
-## 🏗️ Building for Production
-
-To build the client for production:
-
-```bash
-cd client
-npm run build
-```
-
-For production deployment, make sure to:
-1. Set up your production database
-2. Run `npx prisma generate` on the server
-3. Apply migrations with `npx prisma migrate deploy`
-
-## 🧪 Code Quality
-
-The project includes ESLint configuration for maintaining code quality. Run linting with:
-
-```bash
-cd client
-npm run lint
-```
-
-## 📝 License
-
-This project is licensed under the ISC License.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Express](https://img.shields.io/badge/Express-4-000000?logo=express)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?logo=mysql)
 
 ---
 
-*Enjoy your virtual ice cream experience with HelaDuck! 🍦*
+*Proyecto en desarrollo activo — [Osvaldo Rodríguez](https://github.com/OsvaldoRodri)*
