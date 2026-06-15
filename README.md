@@ -1,8 +1,10 @@
-# heladuck
+# sistema-pto-venta-ceili
 
-Aplicación web de punto de venta e inventario para una paletería familiar en Aguascalientes, México.
+Sistema de punto de venta e inventario web para microempresarios rurales de Toyahua de Abajo, Zacatecas, México.
 
-Empezó como proyecto académico para la materia Soluciones de Programación Móvil (ISC, UVM) y continuó como solución real para el negocio. El objetivo es reemplazar el control manual en libreta y calculadora.
+Inició como proyecto académico para la materia Soluciones de Programación Móvil (ISC, UVM) con el nombre HelaDuck, pensado para la paletería familiar. Evolucionó hacia un sistema multi-tenant como proyecto de Servicio Social en la Fundación CEILI, para atender a 15 microempresarios simultáneamente.
+
+El objetivo es reemplazar el control manual en libreta y calculadora: registrar ventas, descontar inventario automáticamente y mostrar un resumen del día por negocio.
 
 ## Stack
 
@@ -14,16 +16,16 @@ Backend: Express.js, Prisma ORM, MySQL
 Estructura cliente/servidor establecida, esquema de base de datos definido con Prisma. Los módulos de ventas e inventario están en desarrollo.
 
 ```
-heladuck/
+sistema-pto-venta-ceili/
 ├── client/    React + TypeScript
 └── server/    Express + Prisma
 ```
 
 ## Roadmap
 
-v0.2: CRUD de productos, registro de ventas con descuento automático de inventario, resumen diario.
+v0.2: CRUD de productos, registro de ventas con descuento automático de inventario, resumen diario por negocio.
 
-v1.0 (julio-agosto 2026): Adaptación para 15 microempresarios rurales de Toyahua de Abajo, Zacatecas, como parte del Servicio Social en la Fundación CEILI. Cada microempresario tendrá su propio catálogo en una plataforma compartida.
+v1.0 (julio-agosto 2026): Despliegue comunitario en Toyahua de Abajo como parte del Servicio Social en la Fundación CEILI. Cada microempresario tendrá su propio catálogo y registro de ventas en una plataforma compartida.
 
 La migración del backend a Spring Boot está en desarrollo en [spring-boot-productos-api](https://github.com/OsvaldoRodri/spring-boot-productos-api).
 
